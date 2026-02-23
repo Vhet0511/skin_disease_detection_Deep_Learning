@@ -198,40 +198,7 @@ Then run the training scripts.
 # 10 Reasons Lab-Tested CNN Models Fail in Real-World Settings
 
 1. Distribution Shift
-Training data and real-world data follow different statistical distributions. When 
-𝑃
-𝑡
-𝑟
-𝑎
-𝑖
-𝑛
-(
-𝑋
-,
-𝑌
-)
-≠
-𝑃
-𝑟
-𝑒
-𝑎
-𝑙
-(
-𝑋
-,
-𝑌
-)
-P
-train
-	​
-
-(X,Y)
-
-=P
-real
-	​
-
-(X,Y), the learned decision boundary no longer aligns with reality.
+Training data and real-world data follow different statistical distributions.When Ptrain​(X,Y) !=Preal​(X,Y), the learned decision boundary no longer aligns with reality .
 
 2. Severe Class Imbalance
 Real-world datasets often have extreme imbalance (like ISIC 2024). Accuracy becomes misleading because predicting the majority class yields high scores while missing critical minority cases.
