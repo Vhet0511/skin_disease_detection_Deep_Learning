@@ -194,3 +194,68 @@ Then run the training scripts.
 - ROC-AUC is a better metric for evaluating generalization.
 
 ---
+
+# 10 Reasons Lab-Tested CNN Models Fail in Real-World Settings
+
+1. Distribution Shift
+Training data and real-world data follow different statistical distributions. When 
+𝑃
+𝑡
+𝑟
+𝑎
+𝑖
+𝑛
+(
+𝑋
+,
+𝑌
+)
+≠
+𝑃
+𝑟
+𝑒
+𝑎
+𝑙
+(
+𝑋
+,
+𝑌
+)
+P
+train
+	​
+
+(X,Y)
+
+=P
+real
+	​
+
+(X,Y), the learned decision boundary no longer aligns with reality.
+
+2. Severe Class Imbalance
+Real-world datasets often have extreme imbalance (like ISIC 2024). Accuracy becomes misleading because predicting the majority class yields high scores while missing critical minority cases.
+
+3. Overfitting to Dataset-Specific Artifacts
+CNNs may learn background textures, lighting conditions, or camera signatures instead of true pathological features.
+
+4. Different Image Acquisition Pipelines
+Variation in devices, resolution, zoom level, dermatoscopes, or hospitals introduces systematic visual differences the model was never trained on.
+
+5. Label Noise in Real Data
+Lab datasets are often curated and verified. Real-world labels may contain annotation errors, uncertain diagnoses, or inconsistent labeling standards.
+
+6. Hidden Confounders
+The model may unintentionally learn shortcuts (e.g., image borders, watermark patterns, demographic correlations) that don’t generalize.
+
+7. Small Effective Sample Diversity
+Even large datasets may lack diversity in skin tones, geographic populations, disease stages, or imaging conditions.
+
+8. Domain Over-Specialization
+Models trained on one dataset specialize to that domain’s visual characteristics and fail when the domain changes (cross-domain generalization issue).
+
+9. Metric Misinterpretation
+Accuracy hides failure in minority classes. Metrics like ROC-AUC, precision-recall curves, and F1-score better reflect real diagnostic performance.
+
+10. Real-World Complexity & Noise
+Clinical settings introduce blur, occlusion, shadows, partial lesions, and non-standard framing that clean lab datasets rarely include.
