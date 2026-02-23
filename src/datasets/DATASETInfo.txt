@@ -1,0 +1,186 @@
+(venv) C:\Users\hetvy\OneDrive\Documents\skin_disease_detection>python src/data_analysis/inspect_ham.py
+Loading HAM10000 metadata...
+
+Basic Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 10015 entries, 0 to 10014
+Data columns (total 7 columns):
+ #   Column        Non-Null Count  Dtype
+---  ------        --------------  -----
+ 0   lesion_id     10015 non-null  str
+ 1   image_id      10015 non-null  str
+ 2   dx            10015 non-null  str
+ 3   dx_type       10015 non-null  str
+ 4   age           9958 non-null   float64
+ 5   sex           10015 non-null  str
+ 6   localization  10015 non-null  str
+dtypes: float64(1), str(6)
+memory usage: 547.8 KB
+None
+
+Total Samples: 10015
+
+Diagnosis Distribution:
+dx
+nv       6705
+mel      1113
+bkl      1099
+bcc       514
+akiec     327
+vasc      142
+df        115
+Name: count, dtype: int64
+
+Missing Values:
+lesion_id        0
+image_id         0
+dx               0
+dx_type          0
+age             57
+sex              0
+localization     0
+dtype: int64
+
+Image Integrity Check:
+Valid images: 50
+Missing images: 0
+Corrupted images: 0
+
+(venv) C:\Users\hetvy\OneDrive\Documents\skin_disease_detection>python src/data_analysis/inspect_isic.py
+Loading ISIC metadata...
+
+Basic Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 401059 entries, 0 to 401058
+Data columns (total 42 columns):
+ #   Column                       Non-Null Count   Dtype
+---  ------                       --------------   -----
+ 0   isic_id                      401059 non-null  str
+ 1   patient_id                   401059 non-null  str
+ 2   age_approx                   398261 non-null  float64
+ 3   sex                          389542 non-null  str
+ 4   anatom_site_general          395303 non-null  str
+ 5   clin_size_long_diam_mm       401059 non-null  float64
+ 6   image_type                   401059 non-null  str
+ 7   tbp_tile_type                401059 non-null  str
+ 8   tbp_lv_A                     401059 non-null  float64
+ 9   tbp_lv_Aext                  401059 non-null  float64
+ 10  tbp_lv_B                     401059 non-null  float64
+ 11  tbp_lv_Bext                  401059 non-null  float64
+ 12  tbp_lv_C                     401059 non-null  float64
+ 13  tbp_lv_Cext                  401059 non-null  float64
+ 14  tbp_lv_H                     401059 non-null  float64
+ 15  tbp_lv_Hext                  401059 non-null  float64
+ 16  tbp_lv_L                     401059 non-null  float64
+ 17  tbp_lv_Lext                  401059 non-null  float64
+ 18  tbp_lv_areaMM2               401059 non-null  float64
+ 19  tbp_lv_area_perim_ratio      401059 non-null  float64
+ 20  tbp_lv_color_std_mean        401059 non-null  float64
+ 21  tbp_lv_deltaA                401059 non-null  float64
+ 22  tbp_lv_deltaB                401059 non-null  float64
+ 23  tbp_lv_deltaL                401059 non-null  float64
+ 24  tbp_lv_deltaLB               401059 non-null  float64
+ 25  tbp_lv_deltaLBnorm           401059 non-null  float64
+ 26  tbp_lv_eccentricity          401059 non-null  float64
+ 27  tbp_lv_location              401059 non-null  str
+ 28  tbp_lv_location_simple       401059 non-null  str
+ 29  tbp_lv_minorAxisMM           401059 non-null  float64
+ 30  tbp_lv_nevi_confidence       401059 non-null  float64
+ 31  tbp_lv_norm_border           401059 non-null  float64
+ 32  tbp_lv_norm_color            401059 non-null  float64
+ 33  tbp_lv_perimeterMM           401059 non-null  float64
+ 34  tbp_lv_radial_color_std_max  401059 non-null  float64
+ 35  tbp_lv_stdL                  401059 non-null  float64
+ 36  tbp_lv_stdLExt               401059 non-null  float64
+ 37  tbp_lv_symm_2axis            401059 non-null  float64
+ 38  tbp_lv_symm_2axis_angle      401059 non-null  int64
+ 39  tbp_lv_x                     401059 non-null  float64
+ 40  tbp_lv_y                     401059 non-null  float64
+ 41  tbp_lv_z                     401059 non-null  float64
+dtypes: float64(33), int64(1), str(8)
+memory usage: 128.5 MB
+None
+
+Total Samples: 401059
+
+Missing Values:
+isic_id                            0
+patient_id                         0
+age_approx                      2798
+sex                            11517
+anatom_site_general             5756
+clin_size_long_diam_mm             0
+image_type                         0
+tbp_tile_type                      0
+tbp_lv_A                           0
+tbp_lv_Aext                        0
+tbp_lv_B                           0
+tbp_lv_Bext                        0
+tbp_lv_C                           0
+tbp_lv_Cext                        0
+tbp_lv_H                           0
+tbp_lv_Hext                        0
+tbp_lv_L                           0
+tbp_lv_Lext                        0
+tbp_lv_areaMM2                     0
+tbp_lv_area_perim_ratio            0
+tbp_lv_color_std_mean              0
+tbp_lv_deltaA                      0
+tbp_lv_deltaB                      0
+tbp_lv_deltaL                      0
+tbp_lv_deltaLB                     0
+tbp_lv_deltaLBnorm                 0
+tbp_lv_eccentricity                0
+tbp_lv_location                    0
+tbp_lv_location_simple             0
+tbp_lv_minorAxisMM                 0
+tbp_lv_nevi_confidence             0
+tbp_lv_norm_border                 0
+tbp_lv_norm_color                  0
+tbp_lv_perimeterMM                 0
+tbp_lv_radial_color_std_max        0
+tbp_lv_stdL                        0
+tbp_lv_stdLExt                     0
+tbp_lv_symm_2axis                  0
+tbp_lv_symm_2axis_angle            0
+tbp_lv_x                           0
+tbp_lv_y                           0
+tbp_lv_z                           0
+dtype: int64
+
+Checking image integrity...
+Image Integrity Check (sample 50):
+Valid images: 49
+Corrupted images: 1
+
+(venv) C:\Users\hetvy\OneDrive\Documents\skin_disease_detection>python src/data_analysis/compare_dataset.py
+Loading ISIC 2024 Ground Truth...
+Loading HAM10000 Metadata...
+
+========== ISIC 2024 ==========
+Total Samples: 401059
+Class Distribution:
+malignant
+0.0    400666
+1.0       393
+Name: count, dtype: int64
+
+========== HAM10000 ==========
+Total Samples: 10015
+Class Distribution:
+dx
+nv       6705
+mel      1113
+bkl      1099
+bcc       514
+akiec     327
+vasc      142
+df        115
+Name: count, dtype: int64
+
+========== SUMMARY ==========
+ISIC unique classes: 2 (Binary)
+HAM unique classes: 7 (Multi-class)
+
+NOTE:
+ISIC is binary (0 = benign, 1 = malignant).

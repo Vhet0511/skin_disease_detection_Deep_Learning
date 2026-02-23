@@ -1,0 +1,29 @@
+Dataset Size Difference:
+ISIC 2024 contains ~401,000 images, while HAM10000 contains ~10,000 images — indicating a massive scale difference.
+
+Label Structure Difference:
+ISIC 2024 is a binary classification dataset (malignant = 0/1), whereas HAM10000 is a 7-class multi-class dataset (dx column).
+
+Extreme Class Imbalance in ISIC:
+Only 393 malignant samples out of 401,059 (~0.1%), making it highly imbalanced and reflective of real-world screening.
+
+Moderate Imbalance in HAM:
+HAM10000 is imbalanced but far less extreme, with nevus (nv) dominating (~67%) and melanoma (mel) around ~11%.
+
+Clinical Distribution Shift:
+ISIC represents large-scale population screening, while HAM is a curated dermoscopy dataset — indicating different data distributions.
+
+Problem Framing Difference:
+ISIC focuses on malignancy detection (risk prediction), whereas HAM focuses on lesion-type classification.
+
+Label Harmonization Required:
+To compare datasets, HAM must be converted to binary (malignant vs benign) to match ISIC’s structure.
+
+Evaluation Metric Caution:
+Accuracy is misleading for ISIC due to extreme imbalance; metrics like F1-score, AUROC, recall, and precision are necessary.
+
+Domain Shift Potential:
+Differences in acquisition settings, dataset purpose, and class distribution create strong domain shift — suitable for robustness evaluation.
+
+Research Value Identified:
+The datasets naturally support a cross-domain generalization study under severe class imbalance shift, strengthening the project's contribution.
