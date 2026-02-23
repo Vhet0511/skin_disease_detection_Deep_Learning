@@ -1,6 +1,6 @@
 # Intra-Dataset vs Cross-Dataset Generalization using CNN
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates an important concept in Deep Learning:
 
@@ -14,8 +14,8 @@ Instead of only building a classifier, this project focuses on understanding:
 
 We compare two experiments:
 
-1️⃣ Training and testing on the same dataset (HAM10000 split)  
-2️⃣ Training on HAM10000 and testing on ISIC 2024 (Cross-dataset evaluation)  
+1. Training and testing on the same dataset (HAM10000 split)  
+2. Training on HAM10000 and testing on ISIC 2024 (Cross-dataset evaluation)  
 
 ---
 
@@ -53,7 +53,7 @@ skin_disease_detection/
 
 ---
 
-## 📊 Datasets Used
+##  Datasets Used
 
 ### HAM10000
 
@@ -95,7 +95,7 @@ skin_disease_detection/
 
 ---
 
-# 🧪 Experiment 1: Same Dataset (HAM Train/Test Split)
+#  Experiment 1: Same Dataset (HAM Train/Test Split)
 
 ### Run:
 
@@ -118,7 +118,7 @@ python src/train_ham_dataset.py
 
 ---
 
-# 🧪 Experiment 2: Cross-Dataset (Train on HAM → Test on ISIC)
+#  Experiment 2: Cross-Dataset (Train on HAM → Test on ISIC)
 
 ### Run:
 
@@ -147,7 +147,7 @@ This highlights the dataset shift problem.
 
 ---
 
-# ▶️ How to Run This Project
+# How to Run This Project
 
 ## Step 1: Clone Repository
 
@@ -186,7 +186,7 @@ Then run the training scripts.
 
 ---
 
-# 📌 Key Takeaways
+# Key Takeaways
 
 - Same-dataset evaluation gives strong performance.
 - Cross-dataset evaluation reveals real-world generalization challenges.
